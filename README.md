@@ -1,27 +1,35 @@
-# Landscape
+title: Readme
+date: 2015-01-25 23:03:36
+categories:
+- About
+tags:
+- Readme
+- Theme
+- Install
+- Configure
+---
+A very simple, elegant and responsive for [Hexo].
 
-A brand new default theme for [Hexo].
-
-- [Preview](http://hexo.io/hexo-theme-landscape/)
+- [Preview](http://ppoffice.github.io/hexo-theme-alex/)
 
 ## Installation
 
 ### Install
 
 ``` bash
-$ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
+$ git clone git://github.com/ppoffice/alex-hexo-theme.git themes/alex
 ```
 
-**Landscape requires Hexo 2.4 and above.**
+**Alex requires Hexo 2.4 and above.**
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `landscape`.
+Modify `theme` setting in `_config.yml` to `Alex`.
 
 ### Update
 
 ``` bash
-cd themes/landscape
+cd themes/Alex
 git pull
 ```
 
@@ -39,7 +47,7 @@ excerpt_link: Read More
 fancybox: true
 
 # Sidebar
-sidebar: right
+sidebar: left
 widgets:
 - category
 - tag
@@ -69,7 +77,7 @@ google_plus:
 
 ### Fancybox
 
-Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
+Alex uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
 
 ```
 ![img caption](img url)
@@ -81,7 +89,7 @@ Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax o
 
 You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
 
-Landscape provides 5 built-in widgets:
+Alex provides 5 built-in widgets:
 
 - category
 - tag
