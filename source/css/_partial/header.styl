@@ -1,0 +1,103 @@
+#header
+  height: header-height
+  position: relative
+  background: #f8f8f8
+  margin-bottom: 50px
+  padding: 0px container-padding
+  
+#header-outer
+  height: 100%
+  position: relative
+
+#header-inner
+  display: block
+  height: 100%
+  overflow: hidden
+
+#logo
+  display: block
+  float: left
+  width: 150px
+  height: 24px
+  background: url(logo) no-repeat
+  background-size: 150px 24px
+  margin: 33px 20px 0 0
+  text-indent: -9999px
+
+#main-nav
+  position: relative
+  float: left
+  top: 37px
+
+$nav-link
+  float: left
+  color: color-default
+  text-decoration: none
+  transition: color 0.2s
+  display: block
+  padding: 0px 7px
+  &:hover
+    color: color-link
+
+.nav-icon
+  @extend $nav-link
+  font-family: font-icon
+  text-align: center
+  font-size: font-size
+  width: font-size
+  height: font-size
+  padding: 5px 7px
+  position: relative
+  cursor: pointer
+  float: left
+  top: 37px
+
+.main-nav-link
+  @extend $nav-link
+  font-weight: 300
+  @media mq-mobile
+    display: none
+
+#main-nav-toggle
+  display: none
+  &:before
+    content: "\f0c9"
+  @media mq-mobile
+    display: block
+
+#sub-nav
+  float: right
+
+#nav-rss-link
+  &:before
+    content: "\f09e"
+
+#nav-search-btn
+  display: none
+  &:before
+    content: "\f002"
+
+#search-form-wrap
+  float: left
+  margin: 29px 10px 0 22px
+  @media mq-mobile
+    width: 100%
+    right: -100%
+
+.search-form-input
+  padding: 0 13px
+  border: 1px solid #D5D5D5
+  height: 38px
+  width: 252px
+  font-size: 15px
+  font-weight: 400
+  background: none
+  display: inline-block
+  border-radius: 20px
+  outline: none
+  transition: background 0.2s
+  &:focus
+    background: white
+
+.search-form-submit
+  display: none

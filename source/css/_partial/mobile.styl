@@ -1,0 +1,38 @@
+@media mq-mobile
+  #main
+    width: 100%
+  #main-nav
+    float: right
+  #header
+    margin: 0px
+    #search-form-wrap
+    #nav-rss-link
+      display: none
+    #main-nav-toggle
+      top: 0px
+  #mobile-nav
+    display: block
+    position: relative
+    width: 100%
+    background: color-mobile-nav-background
+    height: 0px
+    overflow: hidden
+    transition: height 0.2s ease-out
+    &.on
+      height: auto
+    #search-form-wrap-mobile
+      display: block
+      margin: 15px 20px
+      .search-form-input
+        width: 100%
+  .mobile-nav-link
+    display: block
+    color: color-grey
+    text-align: center
+    text-decoration: none
+    padding: 15px 20px
+    font-weight: bold
+    &:hover
+      color: #fff
+  #sidebar
+    display: none

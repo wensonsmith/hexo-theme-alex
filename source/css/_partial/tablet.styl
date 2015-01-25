@@ -1,0 +1,21 @@
+@media mq-tablet
+  #sidebar
+  	display: none
+  #main
+  	width: 100%
+  #main-nav
+    &.off
+      display: none
+  #header
+    #main-nav
+      z-index: 1
+    #sub-nav
+      z-index: -1
+    #nav-search-btn
+      display: inline-block
+    #search-form-wrap
+      display: none
+      opacity: 0
+      &.on
+        display: inline-block
+        opacity: 1
