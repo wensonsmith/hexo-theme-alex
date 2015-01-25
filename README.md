@@ -1,5 +1,4 @@
 #Alex
----
 A very simple, elegant and responsive for [Hexo].
 
 - [Preview](http://ppoffice.github.io/hexo-theme-alex/)
