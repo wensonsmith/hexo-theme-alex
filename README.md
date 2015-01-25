@@ -1,7 +1,7 @@
 #Alex
 A very simple, elegant and responsive for [Hexo].
 
-![](//ppoffice.github.io/hexo-theme-alex/gallery/preview.jpg "Preview")
+![](http://ppoffice.github.io/hexo-theme-alex/gallery/preview.jpg "Preview")
 
 - [Preview](http://ppoffice.github.io/hexo-theme-alex/)
 
