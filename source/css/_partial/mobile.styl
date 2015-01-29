@@ -14,12 +14,12 @@
     display: block
     position: relative
     width: 100%
-    background: color-mobile-nav-background
-    height: 0px
+    max-height: 1000px
     overflow: hidden
-    transition: height 0.2s ease-out
-    &.on
-      height: auto
+    background: color-mobile-nav-background
+    transition: max-height 0.2s linear
+    &.off
+      max-height: 0px
     #search-form-wrap-mobile
       display: block
       margin: 15px 20px
@@ -27,12 +27,14 @@
         width: 100%
   .mobile-nav-link
     display: block
-    color: color-grey
+    color: color-header
     text-align: center
     text-decoration: none
     padding: 15px 20px
-    font-weight: bold
+    font-weight: 300
     &:hover
-      color: #fff
+      background-color: color-nav-hover-background
   #sidebar
     display: none
+  #footer
+    margin-top: 0px

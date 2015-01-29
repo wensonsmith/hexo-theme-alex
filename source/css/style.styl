@@ -28,6 +28,12 @@ input, button
   font-weight: normal
   src: url(font-opensans-path + "Regular.ttf") format("truetype")
 
+@font-face
+  font-family: OpenSans-Semibold
+  font-style: normal
+  font-weight: normal
+  src: url(font-opensans-path + "Semibold.ttf") format("truetype")
+
 html, body, #container
   height: 100%
 
@@ -62,9 +68,21 @@ body
 
 #container #wrap > .outer
   padding: 0px container-padding
+  opacity: 0
+  transition: opacity 0.3s ease-in
+  &.open
+    opacity: 1
 
 #mobile-nav
   display: none
+
+.logo
+  display: block
+  width: 150px
+  height: 24px
+  background: url(logo) no-repeat
+  background-size: 150px 24px
+  text-indent: -9999px
 
 if sidebar and sidebar isnt bottom
   #main
