@@ -1,4 +1,4 @@
-Alex
+#Alex
 
 A very simple, elegant and responsive for [Hexo].
 
