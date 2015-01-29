@@ -1,6 +1,6 @@
 #Alex
 
-A very simple, elegant and responsive for [Hexo].
+A very simple, elegant and responsive theme for [Hexo].
 
 ![](http://ppoffice.github.io/hexo-theme-alex/gallery/preview.jpg "Preview")
 
