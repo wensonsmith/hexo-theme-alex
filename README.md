@@ -1,16 +1,8 @@
-title: Readme
-date: 2015-01-25 23:03:36
-categories:
-- About
-tags:
-- Readme
-- Theme
-- Install
-- Configure
----
+Alex
+
 A very simple, elegant and responsive for [Hexo].
 
-![](/hexo-theme-alex/gallery/preview.jpg "Preview")
+![](http://ppoffice.github.io/hexo-theme-alex/gallery/preview.jpg "Preview")
 
 - [Preview](http://ppoffice.github.io/hexo-theme-alex/)
 
