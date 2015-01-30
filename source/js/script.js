@@ -2,17 +2,20 @@
   //Remove search input icon
   $('input[type=search]').removeAttr('results');
 
+  //Set image scrollLoading
+  $('.article-entry img').each(function() {
+    $(this).attr('data-url', $(this).attr('src'));
+    $(this).addClass('scrollLoading');
+  });
+
   function startWindowAnim(){    
     $('#header').addClass('open');
     $('#wrap > .outer').addClass('open');
     $('#footer').addClass('open');
   }
 
-  //starting animation
-  $(window).on('load', function(){
-    startWindowAnim();
-  });
-  setTimeout(startWindowAnim, 2000);
+  setTimeout(startWindowAnim, 1);
+  setTimeout("$('.scrollLoading').scrollLoading();", 500);
 
   // Share
   $('body').on('click', function(){
@@ -77,7 +80,7 @@
 
       if (alt) $(this).after('<span class="caption">' + alt + '</span>');
 
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+      $(this).wrap('<a href="' + $(this).attr('data-url') + '" title="' + alt + '" class="fancybox"></a>');
     });
 
     $(this).find('.fancybox').each(function(){

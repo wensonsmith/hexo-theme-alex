@@ -22,24 +22,13 @@ input, button
        url(font-icon-path + ".ttf?v=#" + font-icon-version) format("truetype"),
        url(font-icon-path + ".svg#fontawesomeregular?v=#" + font-icon-version) format("svg")
 
-@font-face
-  font-family: OpenSans
-  font-style: normal
-  font-weight: normal
-  src: url(font-opensans-path + "Regular.ttf") format("truetype")
-
-@font-face
-  font-family: OpenSans-Semibold
-  font-style: normal
-  font-weight: normal
-  src: url(font-opensans-path + "Semibold.ttf") format("truetype")
-
 html, body, #container
   height: 100%
 
 body
   background: color-background
-  font: font-size OpenSans,font-yahei
+  font: font-size 'Open Sans',font-yahei
+  font-weight: 300
   -webkit-text-size-adjust: 100%
 
 .outer
@@ -83,6 +72,11 @@ body
   background: url(logo) no-repeat
   background-size: 150px 24px
   text-indent: -9999px
+
+.scrollLoading
+  min-width: 128px
+  min-height: 128px
+  background: url(preloader) center no-repeat
 
 if sidebar and sidebar isnt bottom
   #main

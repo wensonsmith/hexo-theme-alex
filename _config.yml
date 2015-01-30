@@ -17,6 +17,11 @@ widgets:
 - recent_posts
 - tag
 - tagcloud
+- links
+
+# Links
+links: 
+  Hexo: http://hexo.io
 
 # Miscellaneous
 google_analytics:
