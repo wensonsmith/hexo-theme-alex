@@ -4,6 +4,7 @@ menu:
   Archives: /archives
   About: /about/index.html
 rss: 
+github: https://github.com/ppoffice/hexo-theme-alex
 
 # Content
 excerpt_link: Read More

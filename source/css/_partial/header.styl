@@ -51,7 +51,7 @@ $nav-link
 
 .main-nav-link
   @extend $nav-link
-  font-family: 'Open Sans'
+  font-family: 'Open Sans', font-yahei
   font-weight: 600
   @media mq-mobile
     display: none
@@ -69,6 +69,10 @@ $nav-link
 #nav-rss-link
   &:before
     content: "\f09e"
+
+#nav-github-link
+  &:before
+    content: "\f113"
 
 #nav-search-btn
   display: none
@@ -98,6 +102,14 @@ $nav-link
   transition: background 0.2s
   &:focus
     background: white
+  &::-webkit-input-placeholder
+    color: color-search-form-input
+  &:-moz-placeholder
+    color: color-search-form-input
+  &::-moz-placeholder
+    color: color-search-form-input
+  &:-ms-input-placeholder
+    color: color-search-form-input
 
 .search-form-submit
   display: none
