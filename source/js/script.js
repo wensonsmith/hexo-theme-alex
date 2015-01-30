@@ -27,6 +27,7 @@
   //Set image scrollLoading
   $('.article-entry img').each(function() {
     $(this).attr('data-url', $(this).attr('src'));
+    $(this).removeAttr('src');
     $(this).addClass('scrollLoading');
     $(this).wrap('<div class="img-wrap"></div>');
   });
