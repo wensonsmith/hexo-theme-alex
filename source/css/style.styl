@@ -73,11 +73,6 @@ body
   background-size: 150px 24px
   text-indent: -9999px
 
-.scrollLoading
-  min-width: 128px
-  min-height: 128px
-  background: url(preloader) center no-repeat
-
 if sidebar and sidebar isnt bottom
   #main
     @media mq-normal
@@ -96,6 +91,7 @@ if sidebar is left
 @import "_partial/highlight"
 @import "_partial/tablet"
 @import "_partial/mobile"
+@import "_retina"
 
 if sidebar
   @import "_partial/sidebar"

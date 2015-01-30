@@ -121,6 +121,29 @@
       width: 100%
       height: 100%
       margin-top: 0
+  a.fancybox
+    display:block
+    text-align: center
+    line-height: 0
+  .img-wrap
+    position: relative
+    display: inline-block
+    margin: 0 auto
+    min-width: 48px
+    min-height: 48px
+    &:before
+      content:''
+      position: absolute
+      z-index: 1
+      top: 50%
+      left: 50%
+      width: 48px
+      height: 48px
+      margin-left: -24px
+      margin-top: -24px
+      border-radius: 4px
+      background: url(preloader) center center no-repeat, rgba(0,0,0,0.9)
+      background-size: 24px 24px
 
 .article-more-link a
   display: inline-block

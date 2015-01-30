@@ -1,4 +1,26 @@
 (function($){
+
+  // Caption
+  $('.article-entry').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+
+      var alt = this.alt;
+
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+
+      $(this).wrap('<a href="' + $(this).attr('src') + '" title="' + alt + '" class="fancybox"></a>');
+    });
+
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+
+  if ($.fancybox){
+    $('.fancybox').fancybox();
+  }
+
   //Remove search input icon
   $('input[type=search]').removeAttr('results');
 
@@ -6,6 +28,7 @@
   $('.article-entry img').each(function() {
     $(this).attr('data-url', $(this).attr('src'));
     $(this).addClass('scrollLoading');
+    $(this).wrap('<div class="img-wrap"></div>');
   });
 
   function startWindowAnim(){    
@@ -14,8 +37,21 @@
     $('#footer').addClass('open');
   }
 
+  function setScrollLoading(){
+    $('.scrollLoading').scrollLoading();
+    $('.scrollLoading').each(function() {
+        if($(this).complete) {
+          $(this).unwrap();
+        } else {
+          $(this).on('load', function(){
+            $(this).unwrap();
+          });
+        }
+    });
+  }
+
   setTimeout(startWindowAnim, 1);
-  setTimeout("$('.scrollLoading').scrollLoading();", 500);
+  setTimeout(setScrollLoading, 500);
 
   // Share
   $('body').on('click', function(){
@@ -70,27 +106,6 @@
 
     window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
   });
-
-  // Caption
-  $('.article-entry').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox')) return;
-
-      var alt = this.alt;
-
-      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-
-      $(this).wrap('<a href="' + $(this).attr('data-url') + '" title="' + alt + '" class="fancybox"></a>');
-    });
-
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'article' + i);
-    });
-  });
-
-  if ($.fancybox){
-    $('.fancybox').fancybox();
-  }
 
   //Open search box
   $('#nav-search-btn').on('click', function(){
