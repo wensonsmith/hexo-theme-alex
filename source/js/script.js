@@ -123,4 +123,5 @@
   $('#main-nav-toggle').on('click', function(){
     $('#mobile-nav').toggleClass('off');
   });
+
 })(jQuery);
