@@ -1,3 +1,5 @@
+## Attention: A more beautiful and powerful theme for Hexo is now online. - [Hueman](https://github.com/ppoffice/hexo-theme-hueman)
+
 #Alex
 
 A very simple, elegant and responsive theme for [Hexo].
