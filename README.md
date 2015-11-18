@@ -13,7 +13,7 @@ A very simple, elegant and responsive theme for [Hexo].
 ### Install
 
 ``` bash
-$ git clone git://github.com/ppoffice/alex-hexo-theme.git themes/alex
+$ git clone git://github.com/ppoffice/hexo-theme-alex.git themes/alex
 ```
 
 **Alex requires Hexo 2.4 and above.**
