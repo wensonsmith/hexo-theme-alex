@@ -1,17 +1,17 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
-  About: /about/index.html
+  文章: /
+  归档: /archives
+  关于: /about/index.html
 rss: 
-github: https://github.com/ppoffice/hexo-theme-alex
+github: https://github.com/wensonsmith
 
 # Content
 excerpt_link: Read More
 fancybox: true
 
 # Sidebar
-sidebar: left
+sidebar: right
 widgets:
 - category
 - archive
